@@ -21,7 +21,7 @@ public class fibonacci {
             l=p;
         }
 
-
+        scan.close();
 
 
     }
