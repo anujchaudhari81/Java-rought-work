@@ -1,16 +1,17 @@
 import java.util.Scanner;
 
 public class playground {
-    public static void main(String[] args){
-        int i=2;
-        Scanner scan=new Scanner(System.in);
+    public static void main(String[] args) {
 
-        while(i>=0){
-            System.out.print("Please enter 0 to disconnect");
-            i= scan.nextInt();
-            System.out.println("You have entered "+i);
-
-        }
+    System.out.print("addition is 1+2: "+addi(1,2));
 
     }
+
+
+    public static int addi(int a,int b) {
+        int c=a
+                int d=b;
+        return c;
+    }
 }
+
