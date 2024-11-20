@@ -2,21 +2,13 @@ import java.util.Scanner;
 
 public class playground {
     public static void main(String[] args) {
-    Scanner scan=new Scanner(System.in);
-    System.out.print("Enter a string:");
-    String str=scan.nextLine();
-    System.out.print("reversed string is "+revString(str));
-    scan.close();
-    }
 
+        Car c1=new Car();
+        c1.color="red";
+        c1.model="Rav4";
+        c1.year=2024;
 
-    public static String revString(String str) {
-        if(str.isEmpty()||str.length()==1){
-            return str;
-        }
-
-        return str.charAt(str.length()-1)+revString(str.substring(0,str.length()-1));
-
+        c1.attire();
     }
 }
 
