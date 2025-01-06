@@ -3,12 +3,18 @@ import java.util.Scanner;
 public class playground {
     public static void main(String[] args) {
 
-        Car c1=new Car();
-        c1.color="red";
-        c1.model="Rav4";
-        c1.year=2024;
+       Scanner scan=new Scanner(System.in);
+       System.out.println("Enter a number to divide 10 by: ");
 
-        c1.attire();
+       try {
+           int ip = scan.nextInt();
+           int result = 10 / ip;
+           System.out.println("Your result is " + result);
+       }catch(Exception e){
+           System.out.println("There was an error "+e.getMessage());
+       }finally {
+           scan.close();
+       }
     }
 }
 
