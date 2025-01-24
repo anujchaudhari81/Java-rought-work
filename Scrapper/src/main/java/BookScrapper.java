@@ -11,7 +11,7 @@ public class BookScrapper {
         String url;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the url: ");
-        url = sc.nextLine();
+        url = sc.nextLine() ;
         //String url = "https://books.toscrape.com";
 
         try {
