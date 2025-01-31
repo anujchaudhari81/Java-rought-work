@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.webscrapperproo.HelloController" style="-fx-background-color: #3e4a52;">
+    <!-- Top: Big Text -->
+    <top>
+        <VBox alignment="center" style="-fx-background-color: transparent;">
+            <padding>
+                <Insets top="20" bottom="20" left="10" right="10"/>
+            </padding>
+            <Text text="Web Scrapper+"
+                  style="-fx-font-size: 32; -fx-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, black, 5, 0.5, 0, 1);"/>
+        </VBox>
+    </top>
+    <!-- String url = "https://books.toscrape.com"; -->
+    <!-- Center: GridPane for buttons and other controls -->
+    <center>
+        <GridPane alignment="center" hgap="10" vgap="10">
+
+            <TextField fx:id="tf1" promptText=" Enter url" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <!-- Label -->
+            <Label fx:id="welcomeText" text=" " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <!-- Button -->
+            <Button text="Click Me!" onAction="#onHelloButtonClick" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <TextArea fx:id="outputId" GridPane.rowIndex="1" GridPane.columnIndex="0" minHeight="200" minWidth="200"
+            />
+        </GridPane>
+    </center>
+</BorderPane>
